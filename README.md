@@ -18,6 +18,9 @@ Open http://localhost:3000 to view it in the browser.
 #### Cambios en listar
 ![react 3](https://user-images.githubusercontent.com/92740455/166125991-a4fb14d2-38e7-4900-970d-36f60fae8b9d.jpg)
 
+#### Colores de completados
+![react 4](https://user-images.githubusercontent.com/92740455/166126104-1c884d49-291b-472b-a3ee-bdb945ffd5c0.jpg)
+
 
 
 #### By Adryan Ynfante adryanynfante@gmail.com
