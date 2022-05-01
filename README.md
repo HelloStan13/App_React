@@ -13,7 +13,8 @@ Open http://localhost:3000 to view it in the browser.
 ![react 1](https://user-images.githubusercontent.com/92740455/166125942-8d72b58e-a101-4d97-bef5-3ff85136bcfd.jpg)
 
 #### Cambios en form
-![react 2](https://user-images.githubusercontent.com/92740455/166125957-4cbea5f8-272e-4e2c-8584-5e4d619bb412.jpg)
+![react 6](https://user-images.githubusercontent.com/92740455/166127153-07536b61-3eb7-4707-a2f1-2478ee63cd37.jpg)
+
 
 #### Cambios en listar
 ![react 3](https://user-images.githubusercontent.com/92740455/166125991-a4fb14d2-38e7-4900-970d-36f60fae8b9d.jpg)
