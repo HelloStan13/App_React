@@ -18,6 +18,7 @@ function TodoForm() {
   const onSubmit = (event) => {
     event.preventDefault();
     addTodo(newTodoValue);
+
     setOpenModal(false);
   };
 
@@ -27,8 +28,9 @@ function TodoForm() {
       <textarea
         value={newTodoValue}
         onChange={onChange}
-        placeholder="Acá tu tarea"
+        placeholder="Descripción de tarea"
       />
+      <br></br>
       <div className="TodoForm-buttonContainer">
         <button
           type="button"

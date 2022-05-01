@@ -14,9 +14,11 @@
   font-size: 20px;
   line-height: 25px;
   font-weight: 500;
+  color: rgb(13, 13, 13);
 }
 .TodoItem-p--complete {
   text-decoration: line-through;
+  color: green;
 }
 
 .Icon {
