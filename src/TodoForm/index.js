@@ -4,6 +4,8 @@ import './TodoForm.css';
 
 function TodoForm() {
   const [newTodoValue, setNewTodoValue] = React.useState('');
+  const [newResponsable, setNewResponsable] = React.useState('');
+
   const {
     addTodo,
     setOpenModal,
@@ -11,16 +13,21 @@ function TodoForm() {
   
   const onChange = (event) => {
     setNewTodoValue(event.target.value);
+
   };
+  const onChange1 = (event) => {
+    setNewResponsable(event.target.value);
+  };
+  
   const onCancel = () => {
     setOpenModal(false);
   };
   const onSubmit = (event) => {
     event.preventDefault();
-    addTodo(newTodoValue);
-
+    addTodo(newTodoValue +" "+ newResponsable);
     setOpenModal(false);
   };
+
 
   return (
     <form onSubmit={onSubmit}>
@@ -28,9 +35,24 @@ function TodoForm() {
       <textarea
         value={newTodoValue}
         onChange={onChange}
-        placeholder="Descripción de tarea"
+        placeholder="Descripción de la tarea"
       />
       <br></br>
+
+
+      <select class="form-select form-select-sm" 
+      aria-label=".form-select-sm example"
+      onChange={onChange1}
+      value={newResponsable}
+      >
+      <option selected></option>
+        <option>Adryan Ynfante</option>
+        <option>Julian lasso </option>
+        <option>Lorena Castro</option> 
+      </select>
+
+      <br></br>
+
       <div className="TodoForm-buttonContainer">
         <button
           type="button"
@@ -42,6 +64,7 @@ function TodoForm() {
         <button
           type="submit"
           className="TodoForm-button TodoForm-button--add"
+          onClick={onSubmit}
         >
           Añadir
         </button>
