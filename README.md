@@ -22,6 +22,11 @@ Open http://localhost:3000 to view it in the browser.
 #### Colores de completados
 ![react 4](https://user-images.githubusercontent.com/92740455/166126104-1c884d49-291b-472b-a3ee-bdb945ffd5c0.jpg)
 
+#### Se crea select para colocar responsable de tarea
+![react 1](https://user-images.githubusercontent.com/92740455/166344739-b95cd895-f8fe-4e9a-bfa8-8ccc6464651e.jpg)
+
+![react 2](https://user-images.githubusercontent.com/92740455/166344742-ebfce4ad-3af9-4778-b673-83adb32ea312.jpg)
+
 
 
 #### By Adryan Ynfante adryanynfante@gmail.com
