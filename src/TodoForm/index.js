@@ -1,13 +1,6 @@
 import React from 'react';
 import { TodoContext } from '../TodoContext';
 import './TodoForm.css';
-import APIService from '../service/APIService';
-
-constructor(props){
-  super(props)
-  this.state={
-    task:[]  }
-}
 
 function TodoForm() {
   const [newTodoValue, setNewTodoValue] = React.useState('');
