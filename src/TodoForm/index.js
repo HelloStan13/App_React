@@ -24,7 +24,7 @@ function TodoForm() {
   };
   const onSubmit = (event) => {
     event.preventDefault();
-    addTodo(newTodoValue +" "+ newResponsable);
+    addTodo(newTodoValue +" - "+ "Responsable" +" - "+ newResponsable);
     setOpenModal(false);
   };
 
