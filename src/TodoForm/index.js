@@ -3,20 +3,20 @@ import { TodoContext } from '../TodoContext';
 import './TodoForm.css';
 
 function TodoForm() {
-  const [newTodoValue, setNewTodoValue] = React.useState('');
-  const [newResponsable, setNewResponsable] = React.useState('');
+  const [task, setNewtask] = React.useState('');
+  const [responsible, setNewResponsible] = React.useState('');
 
   const {
     addTodo,
     setOpenModal,
   } = React.useContext(TodoContext);
   
-  const onChange = (event) => {
-    setNewTodoValue(event.target.value);
+  const onChangeTask = (event) => {
+    setNewtask(event.target.value);
 
   };
-  const onChange1 = (event) => {
-    setNewResponsable(event.target.value);
+  const onChangeResponsible = (event) => {
+    setNewResponsible(event.target.value);
   };
   
   const onCancel = () => {
@@ -24,26 +24,26 @@ function TodoForm() {
   };
   const onSubmit = (event) => {
     event.preventDefault();
-    addTodo(newTodoValue +" - "+ "Responsable" +" - "+ newResponsable);
+    addTodo(task +" - "+ "Responsable" +" - "+ responsible);
     setOpenModal(false);
   };
 
 
-  return (
+return (
     <form onSubmit={onSubmit}>
       <label>Escribe tu nuevo TODO</label>
       <textarea
-        value={newTodoValue}
-        onChange={onChange}
+        value={task}
+        onChange={onChangeTask}
         placeholder="Descripción de la tarea"
       />
       <br></br>
 
-
       <select class="form-select form-select-sm" 
       aria-label=".form-select-sm example"
-      onChange={onChange1}
-      value={newResponsable}
+      value={responsible}
+      onChange={onChangeResponsible}
+
       >
       <option selected></option>
         <option>Adryan Ynfante</option>
@@ -64,12 +64,13 @@ function TodoForm() {
         <button
           type="submit"
           className="TodoForm-button TodoForm-button--add"
-          onClick={onSubmit}
+          onClick={componentDidMount()}
         >
           Añadir
         </button>
       </div>
     </form>
+    
   );
 }
 
