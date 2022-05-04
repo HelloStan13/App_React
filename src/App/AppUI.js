@@ -8,6 +8,7 @@ import { TodoForm } from '../TodoForm';
 import { CreateTodoButton } from '../CreateTodoButton';
 import { Modal } from '../Modal';
 
+
 function AppUI() {
   const {
     error,
@@ -39,7 +40,7 @@ function AppUI() {
           />
         ))}
       </TodoList>
-
+      
       {!!openModal && (
         <Modal>
           <TodoForm />

@@ -2,10 +2,11 @@ import React from 'react';
 import { TodoContext } from '../TodoContext';
 import './TodoForm.css';
 
+
 function TodoForm() {
   const [task, setNewtask] = React.useState('');
   const [responsible, setNewResponsible] = React.useState('');
-
+  
   const {
     addTodo,
     setOpenModal,
@@ -24,7 +25,7 @@ function TodoForm() {
   };
   const onSubmit = (event) => {
     event.preventDefault();
-    addTodo(task +" - "+ "Responsable" +" - "+ responsible);
+    addTodo(task +" - " + "Responsable" + " - "+ responsible);
     setOpenModal(false);
   };
 
@@ -64,7 +65,7 @@ return (
         <button
           type="submit"
           className="TodoForm-button TodoForm-button--add"
-          onClick={componentDidMount()}
+          onClick={onSubmit}
         >
           Añadir
         </button>
